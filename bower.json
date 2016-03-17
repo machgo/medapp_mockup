@@ -1,0 +1,22 @@
+{
+  "name": "medapp_mockup",
+  "authors": [
+    "Marco Schmid <marco.schmid@eda.admin.ch>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.0.6",
+    "angular-material-icons": "^0.6.0"
+  }
+}
