@@ -21,13 +21,40 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', function($scope, $mdSidenav) 
         }
     ];
 
-    $scope.what = 'What';
-    $scope.who = 'Who';
-    $scope.notes = 'Notes';
+    $scope.medis = [
+        {
+            timename: 'Morgens',
+            items: [
+                { name: 'Medikament Type 1 400mg', consumed: true },
+                { name: 'Medikament Type 2 100mg', consumed: true },
+            ]
+        },
+        {
+            timename: 'Mittag',
+            items: [
+                { name: 'Medikament Type 3 90mg', consumed: true },
+            ]
+        },
+        {
+            timename: 'Abends',
+            items: [
+                { name: 'Medikament Type 1 400mg', consumed: false },
+                { name: 'Medikament Type 2 100mg', consumed: false },
+            ]
+        }
+    ]
 
-
-
-    $scope.alert = '';
+    $scope.appointment = {
+        when: 'Donnerstag, 3. Januar 2017',
+        name: 'Routineuntersuchung',
+        address: "Musterpraxis 22",
+        city: "3003 Bern"
+    };
+    
+    $scope.who = {
+        name: 'Dr. Erich Marcks',
+        tel: "+41 31 / 123 45 67"
+    };
 }]);
 
 app.directive('userAvatar', function() {
@@ -43,5 +70,5 @@ app.config(function($mdThemingProvider) {
             'default': '700',
             'hue-1': '50'
         })
-        .accentPalette('cyan');
+        .accentPalette('brown');
 });
