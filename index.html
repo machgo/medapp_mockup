@@ -49,7 +49,7 @@
                 <md-card-content>
                     <md-list>
                         <div ng-repeat="m in medis">
-                            <md-subheader>{{ m.timename }}</md-subheader>
+                            <md-subheader class="md-no-sticky">{{ m.timename }}</md-subheader>
                             <md-list-item ng-repeat="i in m.items">
                                 <p> {{ i.name }} </p>
                                 <md-checkbox class="md-secondary" ng-model="i.consumed"></md-checkbox>
